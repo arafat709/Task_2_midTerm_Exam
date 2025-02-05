@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+}
+
+/* Main Container */
+.container {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    width: 420px;
+    text-align: center;
+}
+
+/* Main Flex Layout */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title */
+h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Form Container */
+.parent {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(173, 216, 230, 0.5);
+    border-radius: 10px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background: #2c2c2c;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.7);
+    background: #222;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #222;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+button:hover {
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.7);
+    background: #2c2c2c;
+    transform: scale(1.05);
+}
+
+button i {
+    font-size: 20px;
+}
+
+/* Car List Header */
+.car-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 40px;
+    align-items: center;
+    padding: 12px;
+    background: #292929;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Car List Data */
+.carListDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 40px;
+    /* Same as header */
+    align-items: center;
+    padding: 12px;
+    background: #1e1e1e;
+    margin-top: 5px;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* Delete Icon */
+.carListDiv i {
+    text-align: center;
+    cursor: pointer;
+    color: red;
+    transition: 0.3s;
+}
+
+.carListDiv i:hover {
+    color: #ff0000;
+    transform: scale(1.2);
+}
